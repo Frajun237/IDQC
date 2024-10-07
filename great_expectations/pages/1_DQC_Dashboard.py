@@ -14,7 +14,7 @@ import ast
 from datetime import date
 from PIL import Image
 #from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+#from streamlit_pandas_profiling import st_profile_report
 import great_expectations as ge
 from great_expectations.core.batch import BatchRequest
 from great_expectations.core.batch import RuntimeBatchRequest
@@ -461,7 +461,7 @@ if rules_yes_or_not == 'No' and uploaded_file_original is not None:
 	if st.button('Generate a Data Profiling report', help='The process can take up to 1 minute. If you encounter an error message, please try to refresh the page.'):
 		pr = gen_profile_report(data)
 		with st.expander("Report", expanded=True):
-			st_profile_report(pr)
+			#st_profile_report(pr)
 
 	st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 
@@ -744,7 +744,7 @@ if rules_yes_or_not == 'Yes':
 		st.subheader('Data Profiling', help='Data profiling is the process of examining, analyzing, and creating useful summaries of data.')
 		if st.button('Generate a Data Profiling report', help='The process can take up to 1 minute. If you encounter an error message, please try to refresh the page.'):
 			with st.expander("Report", expanded=True):
-				st_profile_report(pr)
+				#st_profile_report(pr)
 	
 		st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 
