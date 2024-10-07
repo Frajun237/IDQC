@@ -2,7 +2,7 @@ plotly
 openpyxl
 xlsxwriter
 streamlit_pandas_profiling
-ydata_profiling==4.7.0
+#ydata_profiling==4.7.0
 great_expectations
 visions==0.7.5
 visions[type-image-path]==0.7.5
