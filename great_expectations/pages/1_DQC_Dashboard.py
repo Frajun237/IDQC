@@ -397,7 +397,8 @@ def compute_column_checks_results(dq_json):
 #    return ProfileReport(df, *report_args, **report_kwargs)
 def gen_profile_report(df):
 	#return ProfileReport(df, progress_bar=True)
-
+	#remove_the_comment
+	pass
 # Heading
 # put logo image on the top right
 image = Image.open('assets/danone_ds_logo.png')
@@ -462,6 +463,7 @@ if rules_yes_or_not == 'No' and uploaded_file_original is not None:
 		pr = gen_profile_report(data)
 		with st.expander("Report", expanded=True):
 			#st_profile_report(pr)
+			pass
 
 	st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 
@@ -745,6 +747,7 @@ if rules_yes_or_not == 'Yes':
 		if st.button('Generate a Data Profiling report', help='The process can take up to 1 minute. If you encounter an error message, please try to refresh the page.'):
 			with st.expander("Report", expanded=True):
 				#st_profile_report(pr)
+				pass
 	
 		st.markdown("""<hr style="height:10px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 
