@@ -2,6 +2,7 @@ plotly
 openpyxl
 xlsxwriter
 #streamlit_pandas_profiling
-#ydata_profiling==4.7.0
+ydata_profiling
 great_expectations
 #pandas-profiling==3.2.0
+numba==0.58.1

@@ -13,7 +13,7 @@ import xlsxwriter
 import ast
 from datetime import date
 from PIL import Image
-#from ydata_profiling import ProfileReport
+from ydata_profiling import ProfileReport
 #from streamlit_pandas_profiling import st_profile_report
 import great_expectations as ge
 from great_expectations.core.batch import BatchRequest
@@ -396,7 +396,7 @@ def compute_column_checks_results(dq_json):
 #def gen_profile_report(df, *report_args, **report_kwargs):
 #    return ProfileReport(df, *report_args, **report_kwargs)
 def gen_profile_report(df):
-	#return ProfileReport(df, progress_bar=True)
+	return ProfileReport(df, progress_bar=True)
 	#remove_the_comment
 	pass
 # Heading
